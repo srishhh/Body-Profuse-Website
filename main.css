@@ -38,7 +38,7 @@ body{
             box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
 .navbar-brand img{
-    width: 30px;
+    width: 100px;
 }
 .navbar-brand span{
     letter-spacing: 2px;
@@ -53,7 +53,7 @@ body{
 
 /* header */
 #header{
-    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+    background: url(../images/pastelbg.jpeg) top/cover no-repeat;
 }
 .carousel-inner h1{
     font-size: 60px;
@@ -116,6 +116,23 @@ body{
             transform: scale(1.2);
 }
 
+/* offers */
+#offers{
+    background: url(../images/offer_img.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+}
 
 /* about */
 #about{
@@ -133,8 +150,8 @@ body{
     max-width: 500px;
 }
 #newsletter .form-control{
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 #newsletter .btn{
     background-color: var(--pink);
@@ -159,6 +176,7 @@ footer a{
 footer a:hover{
     color: var(--pink)!important;
 }
+
 
 /* media queries */
 @media(min-width: 992px){

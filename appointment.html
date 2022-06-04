@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Book An Appointment</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="HTML Template\main.css">
+
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login" action="appointment.php" method="POST">
+            <h1 class="form__title">Book An Appointment</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" name="userID" id="userID" class="form__input" autofocus placeholder="User ID">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" name="name" id="name" class="form__input" autofocus placeholder="Name">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <label class="form__input">Appointment Date And Time:</label>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="datetime-local" name="app_time" id="app_time" class="form__input" autofocus placeholder="Appointment Date And Time">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <label class="form__input">Select A Procedure Type:</label>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+<select id="pro" name="pro" id="pro" class="form__input">
+  <option value="Empty"></option>
+  <option value="Cool Sculpting">Cool Sculpting</option>
+  <option value="Botox Treatment">Botox Treatment</option>
+  <option value="Face Laser Hair Removal">Face Laser Hair Removal</option>
+  <option value="Face Lifting Facial">Face Lifting Facial</option>
+  <option value="Eyebrow Microbreathing">Eyebrow Microbreathing</option>
+</select>
+                <div class="form__input-error-message"></div>
+            </div>
+            <button type="submit" class="form__button" value="Submit">Book</button>
+            <p><a href="indextesting.html">Return To Home</a></p>
+        </form>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
